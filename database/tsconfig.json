@@ -1,0 +1,5 @@
+{
+  "extends": "../backend/tsconfig.json",
+  "include": ["prisma/**/*.ts", "../backend/src/types/node.d.ts"]
+}
+
