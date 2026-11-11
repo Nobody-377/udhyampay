@@ -1,0 +1,24 @@
+{
+  "name": "udyam-pay-database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Udyam PAY PostgreSQL schema, migrations, SQL constraints, Docker setup, and seed scripts.",
+  "scripts": {
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "prisma:generate": "prisma generate --schema=prisma/schema.prisma",
+    "prisma:validate": "prisma validate --schema=prisma/schema.prisma",
+    "prisma:migrate:dev": "prisma migrate dev --schema=prisma/schema.prisma",
+    "prisma:migrate:deploy": "prisma migrate deploy --schema=prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema=prisma/schema.prisma",
+    "seed": "npm --prefix ../backend run prisma:seed",
+    "seed:demo": "npm --prefix ../backend run seed:demo"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}

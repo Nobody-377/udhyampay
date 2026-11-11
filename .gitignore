@@ -1,0 +1,21 @@
+# Dependencies & build artifacts
+node_modules/
+dist/
+dist-verify/
+coverage/
+*.tsbuildinfo
+
+# Logs & archives
+*.log
+*.zip
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

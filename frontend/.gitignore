@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-ssr/
+coverage/
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+.vscode/
+.idea/
+

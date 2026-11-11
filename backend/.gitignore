@@ -1,0 +1,19 @@
+node_modules/
+dist/
+dist-verify/
+coverage/
+*.log
+*.zip
+
+# Ignore nested duplicate workspace mirror
+udyam-pay-backend/
+udhyam-pay-backend/
+
+# Secrets: never commit real environment files
+.env
+.env.*
+!.env.example
+
+.DS_Store
+.idea/
+.vscode/
